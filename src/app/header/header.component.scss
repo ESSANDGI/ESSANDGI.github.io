@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
 .div-container{
-    background-color: red;
-    height: 250px;
+    // background-color: #EA2B1F;  ;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
 }
 
 .div-img{
@@ -11,11 +16,41 @@
     height: 100%;
 }
 
+.div-navbar-container{
+    width: 80%;
+    display: block;
+    flex-direction: row;
+    // background-color: green;
+    margin-left: auto;
+}
+
+.button-navbar{
+    height: 100%;
+    width: 15%;
+    float: right;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    border: none;
+    background-color: white;
+}
+
+.button-navbar:hover{
+    background-color: #F9DF74;;
+}
+
+.button-navbar:active{
+    background-color: #F9EDCC;
+}
+
 @media screen and (max-width: 992px) {
 
     .div-container{
-        background-color: red;
-        height: 200px;
+        width: 100%;
+        height: 100px;
+    }
+
+    .button-navbar{
+        width: 20%;
     }
     
 }
@@ -23,8 +58,25 @@
 @media screen and (max-width: 600px) {
     
     .div-container{
-        background-color: red;
-        height: 100px;
+        // background-color: red;
+        height: 80px;
     }
 
+
+    .button-navbar{
+        height: 100%;
+        width: 20%;
+        float: right;
+        font-family: 'Oswald', sans-serif;
+        font-size: 15px;
+        border: none;
+        background-color: white;
+    }
+
+}
+
+@media screen and (max-width: 372px){
+    .div-container{
+        height: 70px;
+    }
 }
