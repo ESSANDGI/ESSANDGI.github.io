@@ -1,0 +1,30 @@
+.div-container{
+    background-color: red;
+    height: 250px;
+}
+
+.div-img{
+    height: 100%;
+}
+
+.img-logo{
+    height: 100%;
+}
+
+@media screen and (max-width: 992px) {
+
+    .div-container{
+        background-color: red;
+        height: 200px;
+    }
+    
+}
+  
+@media screen and (max-width: 600px) {
+    
+    .div-container{
+        background-color: red;
+        height: 100px;
+    }
+
+}
