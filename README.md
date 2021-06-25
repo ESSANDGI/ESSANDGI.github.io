@@ -1,1 +1,0 @@
-# ESSANDGI.github.io
