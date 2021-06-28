@@ -42,6 +42,13 @@
     background-color: #F9EDCC;
 }
 
+.button-navbar-hidden{
+    display: none;
+}
+
+::ng-deep .mat-menu-container {
+    background-color: #F9EDCC !important;
+}
 @media screen and (max-width: 992px) {
 
     .div-container{
@@ -78,5 +85,21 @@
 @media screen and (max-width: 372px){
     .div-container{
         height: 70px;
+    }
+
+    .button-navbar{
+        display: none;
+    }
+
+    .button-navbar-hidden{
+        display: block;
+    }
+
+    .mat-menu-item{
+        color: black;
+    }
+
+    .mat-menu-item:hover{
+        background-color: #F9DF74;
     }
 }
