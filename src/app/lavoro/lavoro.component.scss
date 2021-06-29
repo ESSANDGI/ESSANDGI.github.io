@@ -1,0 +1,68 @@
+.div-container-lavoro{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.div-presentazione{
+    width: 100%;
+    text-align: center;
+    text-justify:inter-cluster;
+}
+
+.div-mail-social{
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+}
+
+.div-mail-container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+}
+
+.div-mail-container form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.div-mail-container form input{
+    width: 50%;
+}
+
+.div-mail-container form textarea{
+    width: 60%;
+    max-width: 100%;
+    min-height: 100px;
+}
+
+.div-mail-container form button{
+    width: 40%;
+    margin: 0 auto;
+}
+
+.div-social-container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+}
+
+.div-social-icons{
+    width: 100%;
+}
+
+.div-line{
+    width: 100%;
+    text-align: center;
+}
+
+.img-social-icon{
+    width: 12%;
+    margin-right: 7%;
+    margin-left: 7%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
