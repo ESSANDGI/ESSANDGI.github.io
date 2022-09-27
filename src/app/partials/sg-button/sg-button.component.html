@@ -1,0 +1,18 @@
+<div
+    class="rounded"
+    matRipple
+    [matRippleCentered]="false"
+    [matRippleUnbounded]="false"
+    matRippleColor="hsla(0, 100%, 0%, 0.1)">
+    <button 
+    [disabled]="disabled"
+    mat-flat-button 
+    [class]="color + ' bg-'+bgColor"
+    class="fs-button">
+    {{title}}
+    <mat-icon
+        *ngIf="matIcon">
+        {{matIcon}}
+    </mat-icon>
+    </button>
+</div>

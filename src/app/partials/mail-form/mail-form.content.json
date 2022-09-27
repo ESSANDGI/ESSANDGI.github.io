@@ -1,0 +1,51 @@
+{
+    "IT":{
+        "title":"Scrivimi una mail",
+        "name": {
+                "title": "Nome",
+                "formControlName": "name"
+        },
+        "mail": {
+                "title": "Email",
+                "formControlName": "mail",
+                "errorMessage": "Campo obbligatorio",
+                "errorMessage2": "Mail non valida."
+        },
+        "message": {
+                "title": "Messaggio",
+                "formControlName": "message",
+                "errorMessage": "Campo obbligatorio"
+        },
+        "send": {
+            "title" : "Invia",
+            "matIcon" : "send"
+        },
+        "mailSendOk": "Mail inviata con successo.\nTi ricontatterò appena posso!",
+        "mailSendKo": "Si è verificato un errore durante l'invio della mail.\nRiprova più tardi!"
+        
+    },
+    "EN":{
+        "title":"Send me a mail",
+        "name": {
+            "title": "Name",
+            "formControlName": "name"
+        },
+        "mail": {
+            "title": "Mail",
+            "formControlName": "mail",
+            "errorMessage": "Mandatory field.",
+            "errorMessage2": "Invalid mail."
+        },
+        "message": {
+            "title": "Message",
+            "formControlName": "message",
+            "errorMessage": "Mandatory field."
+        },
+        "send": {
+            "title" : "Send",
+            "matIcon" : "send"
+        },
+        "mailSendOk" : "Mail sent successfully.\nI will get back to you as soon as possible!",
+        "mailSendKo" : "An error occurred while sending the email.\nPlease try again later!"
+    }
+}

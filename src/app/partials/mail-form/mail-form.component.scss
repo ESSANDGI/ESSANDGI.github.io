@@ -1,0 +1,19 @@
+:host ::ng-deep{
+
+    .mat-form-field-label{
+        color: var(--d-purple) !important;
+    }
+
+    .mat-input-element{
+        caret-color: var(--d-purple) !important;
+    }
+
+    .mat-form-field-ripple{
+        background-color: var(--d-purple) !important;
+    }
+
+    .mat-form-field-underline{
+        height: 1px !important;
+        background-color: var(--d-purple) !important;
+    }
+}

@@ -1,0 +1,41 @@
+<div class="w-100">
+    <button 
+      mat-button 
+      [matMenuTriggerFor]="languageMenu"
+      (menuClosed)="rotate()"
+      (menuOpened)="rotate()">
+        <img 
+        *ngIf="howToShowSelectedLanguage == 'icon-name'" 
+        class="flag-width me-1"
+        [src]="selectedLanguage.iconUrl" 
+        [alt]="selectedLanguage.title">
+        {{(howToShowSelectedLanguage == 'name-icon' || howToShowSelectedLanguage == 'name' || howToShowSelectedLanguage == 'icon-name')? selectedLanguage.title:''}}
+        <img 
+        *ngIf="howToShowSelectedLanguage == 'name-icon' || howToShowSelectedLanguage == 'icon'" 
+        class="flag-width ms-1"
+        [src]="selectedLanguage.iconUrl" 
+        [alt]="selectedLanguage.title">
+        <mat-icon [@rotatedState]='iconState'>expand_more</mat-icon>
+    </button>
+    <mat-menu 
+      #languageMenu="matMenu"
+      class="bg-white">
+      <button 
+        *ngFor="let language of languages" 
+        mat-menu-item 
+        (click)="selectLanguage(language)"
+        class="bg-white black">
+          <img 
+            class="flag-width me-1"
+            *ngIf="listIconPosition == 'start'" 
+            [src]="language.iconUrl" 
+            [alt]="language.title">
+          {{showOnlyListIcons?'':language.title}}
+          <img 
+            class="flag-width ms-1"
+            *ngIf="listIconPosition == 'end'" 
+            [src]="language.iconUrl" 
+            [alt]="language.title">
+      </button>
+    </mat-menu>
+</div>  

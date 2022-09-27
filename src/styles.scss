@@ -1,1 +1,153 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$essAndGi-primary: mat.define-palette(mat.$indigo-palette);
+$essAndGi-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$essAndGi-warn: mat.define-palette(mat.$red-palette);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$essAndGi-theme: mat.define-light-theme((
+  color: (
+    primary: $essAndGi-primary,
+    accent: $essAndGi-accent,
+    warn: $essAndGi-warn,
+  )
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($essAndGi-theme);
+
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allerta-Stencil&display=swap');
+
+@import "~bootstrap/dist/css/bootstrap.css";
+
+@font-face {
+    font-family: "Allerta Stencil";
+    src: local("Allerta Stencil"), url(./assets/fonts/Allerta_Stencil/AllertaStencil-Regular.ttf) format("truetype");
+}
+
+html, body { height: 100%; }
+
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif !important; 
+}
+
+
+.font-francois-one{
+    font-family: 'Francois One', sans-serif;
+}
+
+.font-allerta-stencil{
+    font-family: 'Allerta Stencil', Arial, Helvetica, sans-serif;
+}
+
+
+@media only screen and (min-width: 1024px) { 
+    .window-size-container-padding{
+        padding: 0 10% 0 10%;
+    }
+}
+
+@media only screen and (min-width: 1441px) { 
+    .window-size-container-padding{
+        padding: 0 15% 0 15%;
+    }
+}
+
+:root{
+    --white: white; 
+    --black: black; 
+    --orange: #f36e62; 
+    --yellow: #ffc101; 
+    --l-purple: #6c5aa6; 
+    --d-purple: #3f3247; 
+    --blue: #00697e;
+    --grey: #aaaaaa; 
+    --green: #238106;
+    --red: #a03737;
+}
+
+.bg-white{ background-color: var(--white) }
+.bg-black{ background-color: var(--black) }
+.bg-orange{ background-color: var(--orange) }
+.bg-yellow{ background-color: var(--yellow) }
+.bg-l-purple{ background-color: var(--l-purple) }
+.bg-d-purple{ background-color: var(--d-purple) }
+.bg-blue{ background-color: var(--blue) }
+.bg-grey{ background-color: var(--grey) }
+.bg-green{ background-color: var(--green) }
+.bg.red{ background-color: va(--red) }
+
+.white{ color: var(--white) }
+.black{ color: var(--black) }
+.orange{ color: var(--orange) }
+.yellow{ color: var(--yellow) }
+.l-purple{ color: var(--l-purple) }
+.d-purple{ color: var(--d-purple) }
+.blue{ color: var(--blue) }
+.grey{ color: var(--grey) }
+.green{ color: var(--green) }
+.red{ color: va(--red) }
+
+.w-40{
+    width: 40%;
+}
+
+.fs-button{
+    font-size: 14px;
+}
+
+.fs-p{
+    font-size: 16px;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+.pre-line {
+    white-space: pre-line;
+  }
+
+.snack-success {
+    color: white;
+    font-size: 17px !important;
+    background-color: var(--green);
+    white-space: pre-line;
+}
+.snack-success .mat-simple-snackbar-action  {
+    color: white;
+    font-size: 17px !important;
+}
+
+.snack-error {
+    color: white;
+    font-size: 17px !important;
+    background-color: var(--red);
+    white-space: pre-line;
+}
+.snack-error .mat-simple-snackbar-action {
+    color: white;
+    font-size: 17px !important;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

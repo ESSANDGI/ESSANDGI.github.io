@@ -1,0 +1,78 @@
+{
+    "IT":{
+        "logo":{
+            "url":"assets/icon/essandgi_logo.png",
+            "alt":"Logo EssAndGi"
+        },
+        "menu":[
+            {
+                "title" : "Home",
+                "navigateTo" : "home",
+                "color": "black",
+                "bgColor" : "yellow"
+            },
+            {
+                "title" : "Su di me",
+                "navigateTo" : "about",
+                "color": "black",
+                "bgColor" : "yellow"
+            },
+            {
+                "title" : "Progetti",
+                "navigateTo" : "projects",
+                "color": "black",
+                "bgColor" : "yellow"
+            },
+            {
+                "title" : "Storie",
+                "navigateTo" : "stories",
+                "color": "black",
+                "bgColor" : "yellow"
+            },
+            {
+                "title" : "Contatti",
+                "navigateTo" : "contacts",
+                "color": "black",
+                "bgColor" : "yellow"
+            }
+        ]
+    },
+    "EN":{
+        "logo":{
+            "url":"assets/icon/essandgi_logo.png",
+            "alt":"EssAndGi Logo"
+        },
+        "menu":[
+            {
+                "title" : "Home",
+                "navigateTo" : "home",
+                "color": "black",
+                "bgColor" : "yellow"
+            },
+            {
+                "title" : "About me",
+                "navigateTo" : "about",
+                "color": "black",
+                "bgColor" : "yellow"
+            },
+            {
+                "title" : "Projects",
+                "navigateTo" : "projects",
+                "color": "black",
+                "bgColor" : "yellow"
+            },
+            {
+                "title" : "Stories",
+                "navigateTo" : "stories",
+                "color": "black",
+                "bgColor" : "yellow"
+            },
+            {
+                "title" : "Contacts",
+                "navigateTo" : "contacts",
+                "color": "black",
+                "bgColor" : "yellow"
+            }
+        ]
+    }
+}

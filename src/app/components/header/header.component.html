@@ -1,0 +1,21 @@
+<div class="w-100 d-flex flex-row window-size-container-padding pt-3 pb-3">
+    <div class="w-25 d-flex flex-row align-items-center">
+        <img 
+            [src]="content.logo.url" 
+            class="w-40"
+            [alt]="content.logo.alt"> 
+    </div>
+    <div class="w-50 d-flex flex-row justify-content-center align-items-center">
+        <sg-button 
+            *ngFor="let button of content.menu"
+            class="ms-1 me-1"
+            [title]="button.title"
+            (click)="navigateTo(button.navigateTo)"
+            bgColor="orange"
+            color="white">
+        </sg-button>
+    </div>
+    <div class="w-25 d-flex flex-row justify-content-end align-items-center">
+        <language-selector></language-selector>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+{
+    "IT":{
+        "hi" : "Ciao,",
+        "imJr" : "sono JUNIOR",
+        "webDev" : "WEB Developer",
+        "about" : {
+            "title" : "Vuoi sapere più su di me?",
+            "navigateTo" : "about",
+            "matIcon" : "north_east"
+        },
+        "description" : "Sono uno sviluppatore web specializzato in Angular e TypeScript.\nPrincipalmente mi occupo di seguire la progettazione e sviluppo di portali di vario genere (Bancari, Assicurativi, Medici, ...).\nOccasionalmente mi occupo anche del UX Design, creando interfacce che trasmettano esperienze digitali uniche.\nHo la passione dello sviluppo Front End (cosa che mi diverte veramente molto) e me la cavo anche con il Back End, ho infatti sperienza con SpringBoot.\nAttualmente sto studiando il tedesco pe rmotivi lavorativi, così da aggiungerlo alle lingue già consciute: inglese, spagnolo ed italiano.\nDi tanto in tanto potrebbe darsi che mi incontriate tra le Alpi a saltare ingiro per qualche montagna o arrampicando qualche parete.",
+        "getInTouch":"Contattami",
+        "mailDescription" : "Anche se al momento non sono alla ricerca di nuove opportunità, la mia casella di posta è sempre aperta.\nSe avete una domanda o volete solo salutarmi, farò del mio meglio per rispondervi!\n\nIn alternativa mi trovi sui miei social, clicca il bottone qui sotto!",
+        "contact" : {
+            "title" : "Altri contatti",
+            "navigateTo" : "contact",
+            "matIcon" : "contact_page"
+        }
+    },
+    "EN":{
+        "hi" : "Hi,",
+        "imJr" : "Im JUNIOR",
+        "webDev" : "WEB Developer",
+        "about" : {
+            "title" : "Want to know more about me?",
+            "navigateTo" : "about",
+            "matIcon" : "north_east"
+        },
+        "description" : "I am a web developer specialized in Angular and TypeScript.\nMainly I follow the design and development of portals of various kinds (Banking, Insurance, Medical, ...).\nOccasionally I also do UX Design, creating interfaces that convey unique digital experiences.\nI have a passion for Front End development (which I really enjoy) however I do not despise Back End, in fact I have experience with SpringBoot.\nI am currently studying German pe rmotives for work, so that I can add it to English, Spanish and Italian.\nFrom time to time you might meet me in the Alps jumping around some mountains or climbing some walls.\nTranslated with www.DeepL.com/Translator (free version)",
+        "getInTouch":"Get In Touch",
+        "mailDescription" : "Although I’m not currently looking for any new opportunities, my inbox is always open.\nWhether you have a question or just want to say hi, I’ll try my best to get back to you!\n\nAlternatively, find me on my socials, click the button below!",
+        "contact" : {
+            "title" : "Other contacts",
+            "navigateTo" : "contact",
+            "matIcon" : "contact_page"
+        }
+    }
+}

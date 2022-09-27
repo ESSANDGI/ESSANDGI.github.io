@@ -1,0 +1,44 @@
+<div class="w-100 d-flex flex-column">
+    <div id="presentation-container" class="w-100 bg-yellow window-size-container-padding">
+        <div id="presentation" class="font-francois-one pt-1 pb-2">
+            <b>
+                <div class="d-flex pt-3 pb-3 m-1 text-container align-items-center">{{content.hi}}</div> 
+                <div class="d-flex pt-3 pb-3 m-1 bg-black yellow text-container align-items-center">{{content.imJr}}</div>
+                <div class="d-flex pt-3 pb-3 m-1 text-container align-items-center">{{content.webDev}}</div>
+            </b>
+        </div>
+    </div>
+    <div class="w-100 d-flex flex-row bg-d-purple window-size-container-padding pt-4 pb-4">
+        <div class="w-25 d-flex flex-row justify-content-center pt-2">
+            <sg-button 
+                [title]="content.about.title" 
+                [matIcon]="content.about.matIcon"
+                (click)="navigateTo(content.about.navigateTo)" 
+                bgColor="orange" 
+                color="white">
+            </sg-button>
+        </div>
+        <div class="w-50 fs-p white text-justify pre-line">
+            {{content.description}}
+        </div>
+    </div>
+    <div class="w-100 d-flex flex-row bg-blue window-size-container-padding pt-4 pb-4">
+        <mail-form class="w-50 pe-2"></mail-form>
+        <div class="w-50 d-flex flex-column ps-2 justify-content-center">
+            <div class="w-100 white mb-3">
+                <h1 class="text-center">{{content.getInTouch}}</h1>
+            </div>
+            <div class="w-100 fs-p white text-justify pre-line">
+                {{content.mailDescription}}
+            </div>
+            <sg-button
+                class="mt-4 align-self-center"
+                [title]="content.contact.title"
+                [matIcon]="content.contact.matIcon"
+                (click)="navigateTo(content.contact.navigateTo)" 
+                bgColor="orange" 
+                color="white">
+            </sg-button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,68 @@
+<div class="w-100 d-flex flex-column p-2 rounded bg-white">
+    <!-- <h2 class="d-purple align-self-center pt-2">{{content.title}}</h2> -->
+    <form 
+        class="w-100 d-flex flex-column"
+        [formGroup]="mailForm"
+        #myForm
+        (submit)="send($event)">
+        <mat-form-field 
+            appearance="fill"
+            class="mt-2">
+            <mat-label>{{content.mail.title}}</mat-label>
+            <input 
+                matInput 
+                name="name"
+                [placeholder]="content.mail.placeHolder!" 
+                [formControlName]="content.mail.formControlName">
+            <mat-error *ngIf="mailForm.get(content.mail.formControlName)!.hasError('required')">
+                {{content.mail.errorMessage}}
+            </mat-error>
+            <mat-error *ngIf="mailForm.get(content.mail.formControlName)!.hasError('pattern')">
+                {{content.mail.errorMessage2}}
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field 
+            appearance="fill" 
+            class="mt-2">
+            <mat-label>{{content.name.title}}</mat-label>
+            <input 
+                matInput 
+                name="email"
+                [placeholder]="content.name.placeHolder!" 
+                [formControlName]="content.name.formControlName">
+        </mat-form-field>
+
+        <mat-form-field 
+            appearance="fill"
+            class="mt-2">
+            <mat-label>{{content.message.title}}</mat-label>
+            <textarea 
+                matInput
+                name="message"
+                cdkTextareaAutosize
+                #autosize="cdkTextareaAutosize"
+                cdkAutosizeMinRows="3"
+                cdkAutosizeMaxRows="5"
+                [formControlName]="content.message.formControlName">
+            </textarea>
+            <mat-error *ngIf="mailForm.get(content.message.formControlName)!.hasError('required')">
+                {{content.message.errorMessage}}
+            </mat-error>
+        </mat-form-field>
+
+        <div class="w-100 d-flex flex-row justify-content-center mt-3 mb-3">
+            <sg-button 
+                class="ms-2"
+                [title]="content.send.title"
+                [matIcon]="content.send.matIcon"
+                color="white"
+                bgColor="orange"
+                [disabled]="mailForm.get(content.mail.formControlName)!.hasError('required') || 
+                            mailForm.get(content.message.formControlName)!.hasError('required') ||
+                            mailForm.get(content.mail.formControlName)!.hasError('pattern')"
+                (clcik)="myForm.submit()">
+            </sg-button>
+        </div>
+    </form>
+</div>
