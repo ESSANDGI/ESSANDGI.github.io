@@ -13,7 +13,7 @@
         "mailDescription" : "Anche se al momento non sono alla ricerca di nuove opportunità, la mia casella di posta è sempre aperta.\nSe avete una domanda o volete solo salutarmi, farò del mio meglio per rispondervi!\n\nIn alternativa mi trovi sui miei social, clicca il bottone qui sotto!",
         "contact" : {
             "title" : "Altri contatti",
-            "navigateTo" : "contact",
+            "navigateTo" : "contacts",
             "matIcon" : "contact_page"
         }
     },
@@ -31,7 +31,7 @@
         "mailDescription" : "Although I’m not currently looking for any new opportunities, my inbox is always open.\nWhether you have a question or just want to say hi, I’ll try my best to get back to you!\n\nAlternatively, find me on my socials, click the button below!",
         "contact" : {
             "title" : "Other contacts",
-            "navigateTo" : "contact",
+            "navigateTo" : "contacts",
             "matIcon" : "contact_page"
         }
     }
