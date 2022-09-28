@@ -1,13 +1,13 @@
 <div class="w-100 bg-orange white d-flex d-row window-size-container-padding pt-4 pb-4 justify-content-center">
     <div class="d-flex flex-column font-allerta-stencil align-items-center">
-        <span class="pb-2" style="font-size: 25px;">{{content.title}}</span>
-        <span style="font-size: 14px;">{{content.by}}</span>
+        <span class="pb-2" id="footer-title">{{content.title}}</span>
+        <span id="footer-by">{{content.by}}</span>
     </div>
 
 </div>
 <div class="w-100 bg-black white window-size-container-padding pt-1 pb-1 d-flex justify-content-center">
-    <span class="align-middle">
-        <mat-icon class="align-middle">copyright</mat-icon> 
+    <span id="copyright-text" class="align-middle">
+        <mat-icon id="copyright" class="align-middle">copyright</mat-icon> 
         {{content.allRightReserved}}
     </span>
 </div>

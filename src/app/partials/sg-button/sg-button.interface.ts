@@ -4,7 +4,8 @@ export interface SGButtonIn{
     navigateTo? : string,
     matIcon? : string,
     color?: string,
-    bgColor? : string
+    bgColor? : string,
+    hiddend? : boolean
 }
 
 export type BUTTON_COLORS = 'white' | 'black' | 'orange' | 'yellow' | 'l-purple' | 'd-purple' | 'grey';

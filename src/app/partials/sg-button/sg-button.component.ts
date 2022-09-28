@@ -13,6 +13,7 @@ export class SgButtonComponent {
   @Input() bgColor : BUTTON_COLORS = 'white';
   @Input() matIcon? : string;
   @Input() disabled : boolean = false;
+  @Input() hidden : boolean = false;
   constructor() { }
 
 }
