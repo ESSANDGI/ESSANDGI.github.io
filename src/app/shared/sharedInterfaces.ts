@@ -1,4 +1,4 @@
-export interface LogoImg{
+export interface Img{
     url : string,
     alt? : string
 }

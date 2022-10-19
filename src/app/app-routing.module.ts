@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: 'about', 
-    loadChildren: () => import('./components/in-work-page/in-work-page.module').then( m => m.InWorkPageModule),
+    loadChildren: () => import('./components/about-me/about-me.module').then( m => m.AboutMeModule),
   },
   {
     path: 'contacts', 

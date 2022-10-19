@@ -1,0 +1,44 @@
+<div class="w-100 d-flex flex-column">
+    <div class="w-100 position-relative">
+        <img 
+            class="bg-img w-100" 
+            [src]="content.img.url" 
+            [alt]="content.img.url">
+        <div class="img-text-container w-50 text-end">
+            <div class="border-bottom mb-3">
+                <span class="black" style="font-size: 40px;">
+                    {{content.title}}
+                    <mat-icon style="transform: scale(1.5);">arrow_forward</mat-icon>
+                </span>
+            </div>
+            <span class="black" style="font-size: 24px;">
+                {{content.subtitle}}
+            </span>
+        </div>
+    </div>
+    <div class="w-100 bg-d-purple white window-size-container-padding pt-2 pb-2">
+        <h1>{{content.italyArriveTitle}}</h1>
+        <div class="w-100">
+            <p class="pre-line text-justify">
+                {{content.italyArriveDesc}}
+            </p>
+        </div>
+    </div>
+    <div class="w-100 bg-d-purple white window-size-container-padding pt-2 pb-2">
+        <h1>{{content.informaticTitle}}</h1>
+        <div class="w-100">
+            <p class="pre-line text-justify">
+                {{content.informaticDesc}}
+            </p>
+        </div>
+    </div>
+    <div class="w-100 bg-d-purple white window-size-container-padding pt-2 pb-2">
+        <h1>{{content.developTitle}}</h1>
+        <div class="w-100">
+            <p class="pre-line text-justify">
+                {{content.developDesc}}
+            </p>
+        </div>
+    </div>
+
+</div>
